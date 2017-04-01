@@ -33,6 +33,10 @@
 					<p><a href="#" data-role="button" data-icon="info" class="ui-btn-left">Ustawienia</a></p><!-- class przyciesk jest po lewej --> 
 				</div>		</div>
 	</div>
+	
+	
+	<!-- MAPA - NOWE -->
+	
 
 	
 	<!-- Województwa -->
@@ -42,7 +46,13 @@
 			<a href="#home" data-icon="home" data-iconpos="notext">Start</a> <!--- notex ukrywa tekst obok ikony -->
 		</div>
 		<div data-role="content">
-				<p>Zawartość</p>
+
+				
+				
+				
+				
+				
+				
 		</div>
 		<div data-role="footer" data-position="fixed"> <!-- stopka -->
 				<div data-role="navbar">  <!--zewnętrzny kontener paska -->
@@ -62,7 +72,24 @@
 			<a href="#home"  data-icon="home" data-iconpos="notext">Start</a>
 		</div>
 		<div data-role="content">
-				<p>Zawartość</p>
+				<p>
+					<div id="area"> 
+					<div > 					
+						<img id="map_poland" usemap="#poland"  style="display: flex; max-width: 50%; max-height: 50%" src="mapa.png" /> 
+					</div>
+            <ul> 
+					<li id="lubelskie"><img src="lubelskie.png" usemap="#poland" /></li> 
+					<li id="podkarpackie"><img src="podkarpackie.png" usemap="#poland" /></li> 
+					<li id="podlaskie"><img src="podlaskie.png" usemap="#poland" /></li> 
+			</ul> 
+            <map id="poland" name="poland" > 
+					 <area shape="poly" alt="lubelskie" title="lubelskie" coords="571,255,554,275,539,269,541,280,532,280,523,289,488,291,488,305,492,325,476,328,490,335,495,348,490,352,492,357,491,389,500,417,505,417,508,406,522,417,518,429,542,436,546,450,537,449,535,454,536,458,555,459,550,463,575,464,585,451,591,455,598,451,612,468,619,451,639,446,640,431,638,410,630,398,633,388,607,350,614,346,595,306,610,307,618,269" href="#lubelskie" /> 
+					<area shape="poly" alt="podkarpackie" title="podkarpackie" coords="608,465,555,546,563,562,561,579,575,595,570,593,554,593,512,576,506,565,477,554,467,562,464,525,455,519,461,513,452,509,455,464,452,461,471,449,483,443,486,433,494,428,495,414,498,416,510,413,514,413,516,423,534,433,542,432,544,447,534,455,545,456,551,462,571,462,583,451,588,451,599,448,602,456,607,462" href="#podkarpackie" /> 
+					<area shape="poly" alt="podlaskie" title="podlaskie" coords="537,40,543,32,552,36,555,46,569,51,569,51,577,53,592,76,582,77,614,159,620,187,621,218,594,227,576,256,567,255,552,245,535,247,526,215,523,201,513,208,518,193,500,204,501,183,488,180,478,173,476,148,467,134,484,139,494,132,513,121,536,103,540,87,530,79,530,62,519,57,539,49" href="#podlaskie" /> 
+            </map> 
+			
+			</div>
+				</p>
 		</div>
 		<div data-role="footer" data-position="fixed"> <!-- stopka -->
 				<div data-role="navbar">  <!--zewnętrzny kontener paska -->
